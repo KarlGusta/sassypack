@@ -2,176 +2,183 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="bg-base-100 text-base-content">
-      {/* Hero Section */}
-      <section className="py-20 text-center max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-6">Build & Launch Your SaaS 5× Faster</h1>
-        <p className="text-xl mb-6">
-          Stop wasting weeks setting up auth, payments, and routes.
-        </p>
-        <p className="text-lg mb-10">
-          <strong>SassyPack</strong> – the MERN SaaS Starter Kit gives you everything ready out of the box,
+    <main className="min-h-screen bg-base-100 text-base-content">
+      {/* Hero */}
+      <section className="text-center py-24 px-6 max-w-4xl mx-auto">
+        <h1 className="text-5xl font-bold mb-4">Build & Launch Your SaaS 5× Faster</h1>
+        <p className="text-lg mb-6">
+          Stop wasting weeks setting up auth, payments, and routes. <br />
+          <strong>SassyPack – the MERN SaaS Starter Kit</strong> gives you everything ready out of the box,
           so you can skip setup and start building features that matter.
         </p>
-        <p className="text-base mb-10">
+        <p className="text-md mb-8">
           Used by indie makers, devs, and small teams shipping fast on MERN.
         </p>
         <a
           href="https://karlgusta.gumroad.com/l/mlixgb"
+          className="btn btn-primary btn-lg"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary btn-lg"
         >
-          Get SassyPack Now
+          🚀 Get SassyPack Now
         </a>
       </section>
 
       {/* Why SassyPack */}
-      <section className="py-16 bg-base-200">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">💡 Why SassyPack</h2>
-          <ul className="list-disc list-inside text-lg max-w-md mx-auto space-y-3">
+      <section className="bg-base-200 py-16 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">💡 Why SassyPack</h2>
+          <ul className="text-left max-w-md mx-auto space-y-2 text-lg">
             <li>✅ Saves weeks of setup time</li>
             <li>✅ Beginner-friendly, clean codebase</li>
             <li>✅ Easy to customize for any SaaS</li>
             <li>✅ Scales with your ideas</li>
             <li>✅ Lifetime updates included</li>
           </ul>
-          <p className="text-center mt-8 text-lg">
-            I built <strong>SassyPack</strong> to save devs from boilerplate pain — now you can just code and launch.
+          <p className="mt-8 text-md italic">
+            “I built SassyPack to save devs from boilerplate pain — now you can just code and launch.”
           </p>
         </div>
       </section>
 
-      {/* What’s Inside */}
-      <section className="py-16">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-10">🧩 What’s Inside</h2>
-          <p className="text-center text-lg mb-6">
-            Everything you need for a production-ready SaaS:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ul className="list-disc list-inside space-y-2">
-              <li>🌐 Landing Page – clean, modern, and responsive</li>
-              <li>🔑 Auth System – signup, login, logout, sessions</li>
-              <li>🔒 Protected Routes – secure user-only pages</li>
-              <li>🧭 Navbar & Footer – styled with DaisyUI</li>
-            </ul>
-            <ul className="list-disc list-inside space-y-2">
-              <li>👤 Profile Page – update user info & settings</li>
-              <li>💳 Payments – supports Paystack + Stripe integration</li>
-              <li>📊 PostHog Analytics – track usage & behavior</li>
-              <li>🖼️ OG Image Setup – perfect for social sharing</li>
-            </ul>
-          </div>
+      {/* What's Inside */}
+      <section className="py-16 px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-10">🧩 What’s Inside</h2>
+        <div className="grid md:grid-cols-2 gap-6 text-lg">
+          <ul className="space-y-2">
+            <li>🌐 Landing Page – clean, modern, and responsive</li>
+            <li>🔑 Auth System – signup, login, logout, sessions</li>
+            <li>🔒 Protected Routes – secure user-only pages</li>
+            <li>🧭 Navbar & Footer – styled with DaisyUI</li>
+          </ul>
+          <ul className="space-y-2">
+            <li>👤 Profile Page – update user info & settings</li>
+            <li>💳 Payments – Paystack + Stripe integration</li>
+            <li>📊 PostHog Analytics – track usage & behavior</li>
+            <li>🖼️ OG Image Setup – perfect for social sharing</li>
+          </ul>
         </div>
       </section>
 
       {/* Bonus Section */}
-      <section className="py-16 bg-base-200">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">🧪 Bonus: Early Access Template</h2>
-          <p className="text-lg mb-4">
-            Validate your idea before you build it.
-          </p>
-          <p className="text-lg mb-6">
-            Launch a pre-order or waitlist with:
-          </p>
-          <ul className="list-disc list-inside text-left max-w-md mx-auto space-y-2 mb-8">
-            <li>✨ Beautiful landing page</li>
-            <li>✨ “Reserve your spot” button</li>
-            <li>✨ Integrated payments</li>
-          </ul>
-          <p className="text-lg">
-            Perfect for testing demand and collecting early supporters.
-          </p>
-        </div>
+      <section className="bg-base-200 py-16 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-6">🧪 Bonus: Early Access Template</h2>
+        <p className="max-w-3xl mx-auto text-lg mb-8">
+          Validate your idea before you build it. Launch a pre-order or waitlist with:
+        </p>
+        <ul className="max-w-md mx-auto text-left space-y-2 text-lg">
+          <li>✨ Beautiful landing page</li>
+          <li>✨ “Reserve your spot” button</li>
+          <li>✨ Integrated payments</li>
+        </ul>
+        <p className="mt-6">
+          Perfect for testing demand and collecting early supporters.
+        </p>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 text-center">
-        <h2 className="text-4xl font-bold mb-8">💰 Pricing</h2>
-        <p className="text-lg mb-6">Choose the plan that fits your journey:</p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+      {/* Pricing */}
+      <section className="py-20 px-6 max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-10">💰 Pricing</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Tier 1 */}
           <div className="card bg-base-100 shadow-xl p-6">
-            <h3 className="text-2xl font-semibold mb-3">Starter</h3>
-            <p className="mb-4">For beginners learning MERN</p>
+            <h3 className="text-2xl font-semibold mb-2 text-green-500">🟢 Tier 1 — Starter</h3>
+            <p className="text-3xl font-bold mb-4">$29</p>
+            <p className="mb-4 text-md">For beginners and solo developers who want to learn or build fast.</p>
+            <ul className="text-left space-y-2 mb-6">
+              <li>✅ Full MERN SaaS Starter Kit</li>
+              <li>✅ Auth, Payments (Paystack + Stripe), Analytics</li>
+              <li>✅ Early Access Template</li>
+              <li>✅ Free updates for 3 months</li>
+            </ul>
+            <p className="italic mb-4">👉 Great entry price for learners & indie</p>
             <a
               href="https://karlgusta.gumroad.com/l/mlixgb"
+              className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline btn-primary w-full"
             >
-              Choose Starter
+              Buy Starter
             </a>
           </div>
-          <div className="card bg-primary text-primary-content shadow-xl p-6">
-            <h3 className="text-2xl font-semibold mb-3">Pro</h3>
-            <p className="mb-4">For indie makers launching real products</p>
+
+          {/* Tier 2 */}
+          <div className="card bg-base-100 shadow-xl border-2 border-primary p-6 relative">
+            <div className="badge badge-primary absolute right-4 top-4">⭐ Most Popular</div>
+            <h3 className="text-2xl font-semibold mb-2 text-blue-500">🔵 Tier 2 — Pro</h3>
+            <p className="text-3xl font-bold mb-4">$79</p>
+            <p className="mb-4 text-md">For makers and founders who want lifetime access and more polish.</p>
+            <ul className="text-left space-y-2 mb-6">
+              <li>✅ Everything in Starter</li>
+              <li>✅ Lifetime updates</li>
+              <li>✅ Early Access + Pricing Page templates</li>
+              <li>✅ Stripe integration</li>
+              <li>✅ Email support</li>
+            </ul>
+            <p className="italic mb-4">👉 Perfect balance of value and features</p>
             <a
               href="https://karlgusta.gumroad.com/l/mlixgb"
+              className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary w-full"
             >
-              Choose Pro
+              Buy Pro
             </a>
           </div>
+
+          {/* Tier 3 */}
           <div className="card bg-base-100 shadow-xl p-6">
-            <h3 className="text-2xl font-semibold mb-3">Team</h3>
-            <p className="mb-4">For agencies or dev teams building SaaS for clients</p>
+            <h3 className="text-2xl font-semibold mb-2 text-purple-500">🟣 Tier 3 — Team / Extended</h3>
+            <p className="text-3xl font-bold mb-4">$149</p>
+            <p className="mb-4 text-md">
+              For small agencies, freelance developers, and teams building multiple SaaS projects.
+            </p>
+            <ul className="text-left space-y-2 mb-6">
+              <li>✅ Everything in Pro</li>
+              <li>✅ Commercial license (use in client projects)</li>
+              <li>✅ Priority support</li>
+              <li>✅ Feature request priority</li>
+            </ul>
+            <p className="italic mb-4">👉 Built for professionals launching multiple SaaS projects</p>
             <a
               href="https://karlgusta.gumroad.com/l/mlixgb"
+              className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline btn-primary w-full"
             >
-              Choose Team
+              Buy Team
             </a>
           </div>
         </div>
 
-        <p className="text-md mb-2">💵 14-day money-back guarantee</p>
-        <p className="text-md mb-8">⚡ Lifetime updates included</p>
+        <p className="mt-10 text-md">
+          💵 <strong>14-day money-back guarantee</strong> <br />
+          ⚡ <strong>Lifetime updates included</strong>
+        </p>
       </section>
 
-      {/* Early Access Offer */}
-      <section className="py-16 bg-base-200 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">🕓 Early Access Offer</h2>
-          <p className="text-lg mb-4">
-            Join the early adopters and get lifetime updates at today’s price.
-          </p>
-          <p className="text-lg mb-8">The price will increase after launch.</p>
-          <a
-            href="https://karlgusta.gumroad.com/l/mlixgb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary btn-lg"
-          >
-            Get Early Access
-          </a>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="py-20 text-center">
-        <h2 className="text-4xl font-bold mb-4">
-          🎯 Start building your SaaS today — the fast way.
-        </h2>
-        <p className="text-xl mb-10">👉 Get SassyPack Now</p>
+      {/* Early Access */}
+      <section className="bg-base-200 text-center py-20 px-6">
+        <h2 className="text-3xl font-bold mb-6">🕓 Early Access Offer</h2>
+        <p className="max-w-3xl mx-auto mb-8 text-lg">
+          Join the early adopters and get lifetime updates at today’s price. <br />
+          The price will increase after launch.
+        </p>
         <a
           href="https://karlgusta.gumroad.com/l/mlixgb"
+          className="btn btn-primary btn-lg"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary btn-lg"
         >
-          Buy SassyPack
+          Get SassyPack Now
         </a>
       </section>
-    </div>
+
+      {/* Footer */}
+      <footer className="text-center py-10 text-sm opacity-70">
+        © {new Date().getFullYear()} SassyPack – Built by Karl Gusta
+      </footer>
+    </main>
   );
 };
 
