@@ -1,6 +1,6 @@
 import React from "react";
 
-const SassyPackLandingPage = () => {
+const LandingPage = () => {
   return (
     <div className="bg-base-100 text-base-content">
       {/* Hero Section */}
@@ -16,7 +16,14 @@ const SassyPackLandingPage = () => {
         <p className="text-base mb-10">
           Used by indie makers, devs, and small teams shipping fast on MERN.
         </p>
-        <button className="btn btn-primary btn-lg">Get SassyPack Now</button>
+        <a
+          href="https://karlgusta.gumroad.com/l/mlixgb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg"
+        >
+          Get SassyPack Now
+        </a>
       </section>
 
       {/* Why SassyPack */}
@@ -91,17 +98,38 @@ const SassyPackLandingPage = () => {
           <div className="card bg-base-100 shadow-xl p-6">
             <h3 className="text-2xl font-semibold mb-3">Starter</h3>
             <p className="mb-4">For beginners learning MERN</p>
-            <button className="btn btn-outline btn-primary w-full">Choose Starter</button>
+            <a
+              href="https://karlgusta.gumroad.com/l/mlixgb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline btn-primary w-full"
+            >
+              Choose Starter
+            </a>
           </div>
           <div className="card bg-primary text-primary-content shadow-xl p-6">
             <h3 className="text-2xl font-semibold mb-3">Pro</h3>
             <p className="mb-4">For indie makers launching real products</p>
-            <button className="btn btn-secondary w-full">Choose Pro</button>
+            <a
+              href="https://karlgusta.gumroad.com/l/mlixgb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary w-full"
+            >
+              Choose Pro
+            </a>
           </div>
           <div className="card bg-base-100 shadow-xl p-6">
             <h3 className="text-2xl font-semibold mb-3">Team</h3>
             <p className="mb-4">For agencies or dev teams building SaaS for clients</p>
-            <button className="btn btn-outline btn-primary w-full">Choose Team</button>
+            <a
+              href="https://karlgusta.gumroad.com/l/mlixgb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline btn-primary w-full"
+            >
+              Choose Team
+            </a>
           </div>
         </div>
 
@@ -117,7 +145,14 @@ const SassyPackLandingPage = () => {
             Join the early adopters and get lifetime updates at today’s price.
           </p>
           <p className="text-lg mb-8">The price will increase after launch.</p>
-          <button className="btn btn-primary btn-lg">Get Early Access</button>
+          <a
+            href="https://karlgusta.gumroad.com/l/mlixgb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary btn-lg"
+          >
+            Get Early Access
+          </a>
         </div>
       </section>
 
@@ -127,10 +162,17 @@ const SassyPackLandingPage = () => {
           🎯 Start building your SaaS today — the fast way.
         </h2>
         <p className="text-xl mb-10">👉 Get SassyPack Now</p>
-        <button className="btn btn-primary btn-lg">Buy SassyPack</button>
+        <a
+          href="https://karlgusta.gumroad.com/l/mlixgb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg"
+        >
+          Buy SassyPack
+        </a>
       </section>
     </div>
   );
 };
 
-export default SassyPackLandingPage;
+export default LandingPage;
