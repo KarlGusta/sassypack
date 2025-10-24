@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-xl mb-4 text-[#F5AF00]">SassyPack</h3>
           <p className="text-sm text-[#CFCFCF]/80">
-            Build & launch your SaaS faster — MERN starter kit with everything you need.
+            Build & launch your SaaS faster, MERN starter kit with everything you need.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="mt-4 text-center text-sm text-[#CFCFCF]/70">
-        © {new Date().getFullYear()} SassyPack — Built by Karl Gusta
+        © {new Date().getFullYear()} SassyPack
       </div>
     </footer>
   );

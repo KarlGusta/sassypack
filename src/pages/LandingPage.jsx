@@ -5,40 +5,26 @@ const LandingPage = () => {
   return (
     <MainLayout>
       <main className="min-h-screen bg-[#212121] text-[#CFCFCF]">
-        {/* Hero */}
-        <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-[#212121] text-[#CFCFCF]">
-          {/* Animated background gradient orbs */}
-          <div className="absolute inset-0 overflow-hidden opacity-20">
-            <div className="absolute top-1/4 -left-20 w-96 h-96 bg-[#F5AF00] rounded-full blur-3xl animate-pulse"></div>
-            <div
-              className="absolute bottom-1/4 -right-20 w-96 h-96 bg-[#CFCFCF] rounded-full blur-3xl animate-pulse"
-              style={{ animationDelay: "1s" }}
-            ></div>
-          </div>
 
-          <div className="relative z-10 text-center max-w-4xl mx-auto">
-            <div className="inline-block mb-6 px-4 py-2 bg-[#F5AF00]/20 rounded-full text-[#F5AF00] text-sm font-medium animate-fade-in">
+        {/* Hero */}
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-[#212121]">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-block mb-6 px-4 py-2 bg-[#2A2A2A] rounded-full text-[#F5AF00] text-sm font-medium">
               ⚡ Ship SaaS projects in days, not months
             </div>
 
-            <h1 className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight text-[#F5AF00] animate-fade-in-up">
+            <h1 className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight text-[#F5AF00]">
               Build & Launch<br />5× Faster
             </h1>
 
-            <p
-              className="text-xl md:text-2xl mb-8 text-[#CFCFCF]/80 max-w-2xl mx-auto animate-fade-in-up"
-              style={{ animationDelay: "0.1s" }}
-            >
-              The complete MERN SaaS starter kit with auth, payments, and analytics built-in
+            <p className="text-xl md:text-2xl mb-8 text-[#CFCFCF]/80 max-w-2xl mx-auto">
+              The complete MERN SaaS starter kit with auth, payments, and analytics built-in.
             </p>
 
-            <div
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
-              style={{ animationDelay: "0.2s" }}
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="https://karlgusta.gumroad.com/l/mlixgb"
-                className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 hover:scale-105 transition-transform shadow-lg"
+                className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 transition-transform"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -62,10 +48,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div
-              className="mt-12 flex items-center justify-center gap-6 text-sm text-[#CFCFCF]/60 animate-fade-in"
-              style={{ animationDelay: "0.3s" }}
-            >
+            <div className="mt-12 flex items-center justify-center gap-6 text-sm text-[#CFCFCF]/60">
               <div className="flex -space-x-2">
                 <div className="w-8 h-8 rounded-full bg-[#F5AF00]"></div>
                 <div className="w-8 h-8 rounded-full bg-[#CFCFCF]"></div>
@@ -73,22 +56,6 @@ const LandingPage = () => {
               </div>
               <span>Trusted by indie makers worldwide</span>
             </div>
-          </div>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg
-              className="w-6 h-6 text-[#CFCFCF]/40"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
           </div>
         </section>
 
@@ -109,15 +76,13 @@ const LandingPage = () => {
                 { icon: "📊", title: "Analytics", desc: "PostHog tracking built-in" },
                 { icon: "🔒", title: "Protected Routes", desc: "Role-based access control" },
                 { icon: "👤", title: "User Profiles", desc: "Customizable user pages" },
-                { icon: "🎨", title: "DaisyUI Styled", desc: "Beautiful, responsive design" }
+                { icon: "🎨", title: "DaisyUI Styled", desc: "Beautiful, responsive design" },
               ].map((feature, i) => (
                 <div
                   key={i}
-                  className="group p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+                  className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all"
                 >
-                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">
-                    {feature.icon}
-                  </div>
+                  <div className="text-4xl mb-4">{feature.icon}</div>
                   <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
                     {feature.title}
                   </h3>
@@ -129,18 +94,17 @@ const LandingPage = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-32 px-6 text-center bg-[#2A2A2A] relative">
-          <div className="absolute inset-0 bg-[#F5AF00]/10 blur-3xl"></div>
-          <div className="relative z-10 max-w-4xl mx-auto">
+        <section className="py-32 px-6 text-center bg-[#212121]">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F5AF00]">
               Ready to build your SaaS?
             </h2>
             <p className="text-xl text-[#CFCFCF]/70 mb-8 max-w-2xl mx-auto">
-              Join hundreds of developers who are shipping faster with SassyPack
+              Join hundreds of developers who are shipping faster with SassyPack.
             </p>
             <a
               href="https://karlgusta.gumroad.com/l/mlixgb"
-              className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 hover:scale-105 transition-transform shadow-xl"
+              className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
             >
