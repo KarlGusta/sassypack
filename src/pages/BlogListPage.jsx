@@ -8,7 +8,7 @@ export default function BlogListPage() {
     <MainLayout>
       <div className="container mx-auto p-6 bg-[#212121] min-h-screen text-[#CFCFCF]">
         <h1 className="text-4xl font-extrabold text-center mb-10 text-[#F5AF00]">
-          Insights from FurnishlyAI
+          Insights from SassyPack
         </h1>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
