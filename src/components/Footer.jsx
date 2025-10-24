@@ -28,7 +28,20 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="mt-8 text-center text-sm opacity-70">
+
+      {/* Built with SassyPack Button */}
+      <div className="mt-8 text-center">
+        <a 
+          href="https://sassypack.collabtower.com" 
+          target="_blank" 
+          rel="noreferrer" 
+          className="btn btn-sm btn-primary"
+        >
+          Built with SassyPack
+        </a>
+      </div>
+
+      <div className="mt-4 text-center text-sm opacity-70">
         © {new Date().getFullYear()} SassyPack – Built by Karl Gusta
       </div>
     </footer>
