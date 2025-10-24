@@ -745,6 +745,6 @@ Your second could bring your first customer.
 
 Because in SaaS, traffic is code you can’t ignore.
 `
-}
+},
 
 ];
