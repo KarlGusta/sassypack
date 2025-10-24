@@ -332,4 +332,153 @@ Build what sells. Then build it fast.
 `
 },
 
+{
+  slug: "complete-mern-saas-starter-kit-breakdown",
+  title: "The Complete MERN SaaS Starter Kit Breakdown",
+  date: "2025-10-24",
+  description:
+    "Everything you need to launch your SaaS faster — inside one complete MERN starter kit. See what’s included in SassyPack and how it saves weeks of setup time.",
+  content: `
+
+If you’ve ever tried to build a SaaS from scratch, you know the pain.  
+Auth, payments, routes, analytics — all before you even touch your actual product.
+
+That’s why I built **[SassyPack](https://karlgusta.gumroad.com/l/mlixgb)** — the **complete MERN SaaS starter kit** that handles all the boring parts for you, so you can focus on what matters: **your product**.
+
+Let’s break down exactly what’s inside.
+
+---
+
+## 🧱 1. Modern Landing Page
+
+Your first impression matters.  
+SassyPack comes with a **responsive, modern landing page** built with TailwindCSS + DaisyUI.
+
+- Pre-built sections for features, pricing, and CTAs  
+- Mobile-friendly and SEO-ready  
+- Fast-loading and optimized for conversions  
+
+All you have to do is update the copy and hit deploy.
+
+---
+
+## 🔐 2. Authentication System
+
+Signup, login, logout, sessions — all ready to go.  
+You don’t need to wire up tokens or spend hours debugging your JWT setup.
+
+- Secure authentication flow (email + password)  
+- Protected routes for user-only areas  
+- Session persistence with refresh tokens  
+- Clean, reusable code you can extend  
+
+---
+
+## 💳 3. Payments (Stripe + Paystack)
+
+Monetize your SaaS instantly.  
+SassyPack includes built-in integrations for **Stripe** and **Paystack**, so you can start collecting payments in minutes.
+
+- One-time and subscription models supported  
+- Works globally (Stripe) and regionally (Paystack)  
+- Simple `.env` setup — just plug in your keys  
+
+You don’t need to be a payments expert to get paid.
+
+---
+
+## 👤 4. Profile Page + Settings
+
+Give your users control.  
+A simple, functional profile page is already built, including:
+
+- Profile info updates  
+- Password reset option  
+- Settings component ready for expansion  
+
+This is the foundation for any serious SaaS — already handled.
+
+---
+
+## 📊 5. Analytics with PostHog
+
+Don’t build blind.  
+SassyPack integrates with **PostHog Analytics** to help you understand how users interact with your app.
+
+- Event tracking for usage & behavior  
+- Works out-of-the-box — just set your key  
+- Fully privacy-compliant  
+
+Launch with insights from day one.
+
+---
+
+## 🧩 6. SEO-Ready Blog
+
+Your SaaS needs traffic.  
+That’s why SassyPack includes a **built-in blog** for SEO and product updates.
+
+- Markdown-based content system  
+- Auto-generated meta tags + OG images  
+- Clean, readable blog layout  
+
+It’s perfect for changelogs, tutorials, or product announcements.
+
+---
+
+## 🪄 7. OG Image + Metadata Setup
+
+Every page in SassyPack is optimized for sharing.  
+OG image, meta tags, and social previews are pre-configured so your links look perfect everywhere.
+
+---
+
+## 💬 8. Built with Clean, Scalable Code
+
+Everything is built with **MongoDB, Express, React, Node.js (MERN)** — no frameworks you don’t understand.
+
+- Clear folder structure  
+- Modular components  
+- Easy to customize for any idea  
+
+You can extend or pivot your SaaS without hitting weird framework limits.
+
+---
+
+## 🧠 Bonus: Early Access Template
+
+Validate your idea before building it.  
+Launch a waitlist or pre-order page in minutes with:
+
+- A built-in landing page  
+- “Reserve Your Spot” CTA  
+- Integrated Stripe/Paystack checkout  
+
+Perfect for testing demand before you code.
+
+---
+
+## 💵 Pricing Overview
+
+**Starter ($29)**  
+→ Great for learners and indie devs building small projects.  
+Includes 3 months of updates.  
+
+**Pro ($79)** *(Most Popular)*  
+→ Lifetime updates + Early Access templates.  
+Perfect for serious makers and startup founders.  
+
+---
+
+### 🚀 Final Thoughts
+
+You don’t need to waste weeks setting up boilerplate anymore.  
+SassyPack gives you everything you need to **build, launch, and grow your SaaS — 5× faster.**
+
+👉 [Get SassyPack on Gumroad →](https://karlgusta.gumroad.com/l/mlixgb)
+
+Stop setting up. Start shipping.
+`
+},
+
 ];
