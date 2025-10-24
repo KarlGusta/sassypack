@@ -481,4 +481,121 @@ Stop setting up. Start shipping.
 `
 },
 
+{
+  slug: "integrate-payments-in-your-saas",
+  title: "How to Integrate Payments in Your SaaS (Stripe + Paystack Guide)",
+  date: "2025-10-24",
+  description:
+    "Learn how to integrate Stripe and Paystack payments into your SaaS app in minutes — without spending days setting up APIs and webhooks.",
+  content: `
+
+One of the hardest parts of launching a SaaS isn’t building features — it’s setting up **payments**.  
+You just want to get paid, but suddenly you’re neck-deep in APIs, tokens, and webhook docs.
+
+That’s why I built **[SassyPack](https://karlgusta.gumroad.com/l/mlixgb)** — the **MERN SaaS starter kit** that handles **Stripe + Paystack integration out of the box**.
+
+You can literally start collecting payments in minutes.
+
+---
+
+## 💳 Why Payments Are Hard (When You Build From Scratch)
+
+Integrating payments from scratch usually means:
+- Setting up a backend with secure endpoints  
+- Configuring webhooks for subscriptions and receipts  
+- Managing API keys, test environments, and currencies  
+- Handling authentication and user sync manually  
+
+It’s easy to make mistakes — and every mistake can cost you money, users, or time.
+
+---
+
+## ⚡ How SassyPack Solves It
+
+SassyPack includes **ready-to-use payment integration** for both **Stripe** (global) and **Paystack** (popular in Africa and emerging markets).
+
+Here’s what’s already set up for you:
+- ✅ Secure backend routes  
+- ✅ Payment components integrated with your frontend  
+- ✅ Webhook-ready backend for live payments  
+- ✅ Example checkout flow for both platforms  
+
+All you do is drop in your API keys — no complicated setup required.
+
+---
+
+## 🌍 Stripe for Global Users
+
+Stripe is ideal if your SaaS targets users in the US, Europe, or globally.
+
+With SassyPack:
+- Stripe Checkout is already built in  
+- Customer sessions sync automatically  
+- You can test in minutes with Stripe’s sandbox mode  
+
+Perfect for recurring subscriptions or one-time payments.
+
+---
+
+## 🇳🇬 Paystack for African & Regional Payments
+
+If you’re building for markets in Africa (especially Nigeria, Kenya, Ghana, or South Africa), Paystack is a must-have.
+
+SassyPack’s Paystack integration:
+- Supports local currencies (NGN, KES, GHS, ZAR)  
+- Uses the Paystack JS SDK for smooth checkout  
+- Works seamlessly alongside Stripe  
+
+You can even switch between them based on user location.
+
+---
+
+## 🧠 Example: Enabling Payments in SassyPack
+
+Just set your keys in your `.env`:
+
+\`\`\`
+STRIPE_SECRET_KEY=your_key_here
+PAYSTACK_SECRET_KEY=your_key_here
+\`\`\`
+
+Then update your pricing page in \`/src/components/Pricing.js\` — the logic is already ready to go.  
+The “Get Now” button automatically triggers the correct payment handler.
+
+---
+
+## 🧩 More Than Just Payments
+
+SassyPack’s payment setup works hand-in-hand with:
+- **Authentication** → only logged-in users can pay  
+- **Protected routes** → manage paid user areas  
+- **Analytics** → track conversions with PostHog  
+
+It’s a complete ecosystem, not just a template.
+
+---
+
+## 💵 Choose Your Plan
+
+**Starter ($29)**  
+→ For devs learning MERN and testing payment flows.  
+Includes free updates for 3 months.  
+
+**Pro ($79)** *(Most Popular)*  
+→ Lifetime updates + full Early Access templates.  
+Best for makers and founders launching real SaaS products.
+
+---
+
+### 🚀 Start Getting Paid Today
+
+Stop wrestling with payment APIs.  
+Start building your product and collecting revenue faster.
+
+👉 [Get SassyPack on Gumroad →](https://karlgusta.gumroad.com/l/mlixgb)
+
+Because your SaaS deserves to start earning — not waiting.
+`
+},
+
 ];
