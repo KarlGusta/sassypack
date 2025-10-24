@@ -5,12 +5,13 @@ const Navbar = () => {
   return (
     <header className="bg-[#212121] text-[#CFCFCF] shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
+        {/* Logo */}
         <Link to="/" className="text-2xl font-bold">
           SassyPack
         </Link>
 
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-6">
+        {/* Centered Menu */}
+        <nav className="hidden md:flex flex-1 justify-center space-x-6">
           <Link to="#why" className="hover:text-[#F5AF00] transition">
             Why SassyPack
           </Link>
@@ -23,17 +24,18 @@ const Navbar = () => {
           <Link to="#early" className="hover:text-[#F5AF00] transition">
             Early Access
           </Link>
-
-          <a
-            href="https://karlgusta.gumroad.com/l/mlixgb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-sm border-none"
-            style={{ backgroundColor: "#F5AF00", color: "#212121" }}
-          >
-            Get Now
-          </a>
         </nav>
+
+        {/* Get Now Button */}
+        <a
+          href="https://karlgusta.gumroad.com/l/mlixgb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-sm border-none"
+          style={{ backgroundColor: "#F5AF00", color: "#212121" }}
+        >
+          Get Now
+        </a>
 
         {/* Mobile Menu */}
         <div className="md:hidden dropdown dropdown-end">
