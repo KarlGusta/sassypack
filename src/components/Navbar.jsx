@@ -6,7 +6,7 @@ const Navbar = () => {
     <header className="bg-[#212121] text-[#CFCFCF] shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <Link to="/" className="text-2xl font-bold">
-          🚀 SassyPack
+          SassyPack
         </Link>
 
         {/* Desktop Menu */}
