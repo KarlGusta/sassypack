@@ -1,29 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="bg-[#212121] text-[#CFCFCF] shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold">
+        <a href="#top" className="text-2xl font-bold">
           SassyPack
-        </Link>
+        </a>
 
         {/* Centered Menu */}
         <nav className="hidden md:flex flex-1 justify-center space-x-6">
-          <Link to="#why" className="hover:text-[#F5AF00] transition">
+          <a href="#why" className="hover:text-[#F5AF00] transition">
             Why SassyPack
-          </Link>
-          <Link to="#inside" className="hover:text-[#F5AF00] transition">
+          </a>
+          <a href="#inside" className="hover:text-[#F5AF00] transition">
             What's Inside
-          </Link>
-          <Link to="#pricing" className="hover:text-[#F5AF00] transition">
+          </a>
+          <a href="#pricing" className="hover:text-[#F5AF00] transition">
             Pricing
-          </Link>
-          <Link to="#early" className="hover:text-[#F5AF00] transition">
+          </a>
+          <a href="#early" className="hover:text-[#F5AF00] transition">
             Early Access
-          </Link>
+          </a>
         </nav>
 
         {/* Get Now Button (desktop only) */}
@@ -64,24 +63,24 @@ const Navbar = () => {
             className="dropdown-content menu p-3 shadow-lg bg-[#212121] text-[#CFCFCF] rounded-box w-52 mt-2 space-y-2"
           >
             <li>
-              <Link to="#why" className="hover:text-[#F5AF00]">
+              <a href="#why" className="hover:text-[#F5AF00]">
                 Why SassyPack
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#inside" className="hover:text-[#F5AF00]">
+              <a href="#inside" className="hover:text-[#F5AF00]">
                 What's Inside
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#pricing" className="hover:text-[#F5AF00]">
+              <a href="#pricing" className="hover:text-[#F5AF00]">
                 Pricing
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#early" className="hover:text-[#F5AF00]">
+              <a href="#early" className="hover:text-[#F5AF00]">
                 Early Access
-              </Link>
+              </a>
             </li>
             <li>
               <a
