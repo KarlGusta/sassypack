@@ -6,8 +6,8 @@ import MainLayout from "../layouts/MainLayout";
 export default function BlogListPage() {
   return (
     <MainLayout>
-      <div className="container mx-auto p-6 bg-brandIvory min-h-screen">
-        <h1 className="text-4xl font-extrabold text-center text-brandPurple mb-10">
+      <div className="container mx-auto p-6 bg-[#212121] min-h-screen text-[#CFCFCF]">
+        <h1 className="text-4xl font-extrabold text-center mb-10 text-[#F5AF00]">
           Insights from FurnishlyAI
         </h1>
 
@@ -15,20 +15,20 @@ export default function BlogListPage() {
           {blogPosts.map((post) => (
             <div
               key={post.slug}
-              className="card bg-white border border-brandPurple/10 shadow-lg hover:shadow-xl transition-all rounded-2xl p-6"
+              className="card bg-[#212121] border border-[#3a3a3a] shadow-lg hover:shadow-xl transition-all rounded-2xl p-6"
             >
-              <h2 className="text-2xl font-semibold text-brandPurple mb-2">
+              <h2 className="text-2xl font-semibold text-[#F5AF00] mb-2">
                 {post.title}
               </h2>
-              <p className="text-sm text-brandPurple/60 mb-4">
+              <p className="text-sm text-[#CFCFCF]/70 mb-4">
                 {new Date(post.date).toLocaleDateString()}
               </p>
-              <p className="text-brandPurple/80 mb-6 line-clamp-3">
+              <p className="text-[#CFCFCF]/90 mb-6 line-clamp-3">
                 {post.description}
               </p>
               <Link
                 to={`/blog/${post.slug}`}
-                className="btn btn-sm bg-brandPurple text-brandIvory hover:bg-brandPurple/90 rounded-full"
+                className="btn btn-sm bg-[#F5AF00] text-black hover:bg-[#d49b00] rounded-full"
               >
                 Read More →
               </Link>
