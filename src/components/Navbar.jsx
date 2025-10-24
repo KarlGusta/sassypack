@@ -11,10 +11,18 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
-          <Link to="#why" className="hover:text-[#F5AF00] transition">Why SassyPack</Link>
-          <Link to="#inside" className="hover:text-[#F5AF00] transition">What's Inside</Link>
-          <Link to="#pricing" className="hover:text-[#F5AF00] transition">Pricing</Link>
-          <Link to="#early" className="hover:text-[#F5AF00] transition">Early Access</Link>
+          <Link to="#why" className="hover:text-[#F5AF00] transition">
+            Why SassyPack
+          </Link>
+          <Link to="#inside" className="hover:text-[#F5AF00] transition">
+            What's Inside
+          </Link>
+          <Link to="#pricing" className="hover:text-[#F5AF00] transition">
+            Pricing
+          </Link>
+          <Link to="#early" className="hover:text-[#F5AF00] transition">
+            Early Access
+          </Link>
 
           <a
             href="https://karlgusta.gumroad.com/l/mlixgb"
@@ -28,8 +36,11 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu */}
-        <div className="md:hidden dropdown">
-          <label tabIndex={0} className="btn btn-ghost btn-circle text-[#F5AF00]">
+        <div className="md:hidden dropdown dropdown-end">
+          <label
+            tabIndex={0}
+            className="btn btn-ghost btn-circle text-[#F5AF00]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -37,7 +48,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </label>
 
@@ -45,10 +61,26 @@ const Navbar = () => {
             tabIndex={0}
             className="dropdown-content menu p-3 shadow-lg bg-[#212121] text-[#CFCFCF] rounded-box w-52 mt-2 space-y-2"
           >
-            <li><Link to="#why" className="hover:text-[#F5AF00]">Why SassyPack</Link></li>
-            <li><Link to="#inside" className="hover:text-[#F5AF00]">What's Inside</Link></li>
-            <li><Link to="#pricing" className="hover:text-[#F5AF00]">Pricing</Link></li>
-            <li><Link to="#early" className="hover:text-[#F5AF00]">Early Access</Link></li>
+            <li>
+              <Link to="#why" className="hover:text-[#F5AF00]">
+                Why SassyPack
+              </Link>
+            </li>
+            <li>
+              <Link to="#inside" className="hover:text-[#F5AF00]">
+                What's Inside
+              </Link>
+            </li>
+            <li>
+              <Link to="#pricing" className="hover:text-[#F5AF00]">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link to="#early" className="hover:text-[#F5AF00]">
+                Early Access
+              </Link>
+            </li>
             <li>
               <a
                 href="https://karlgusta.gumroad.com/l/mlixgb"
