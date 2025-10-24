@@ -5,27 +5,32 @@ const LandingPage = () => {
   return (
     <MainLayout>
       <main className="min-h-screen bg-[#212121] text-[#CFCFCF]">
-
         {/* Hero */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-[#212121]">
+        <section
+          id="top"
+          className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-[#212121]"
+        >
           <div className="max-w-4xl mx-auto">
             <div className="inline-block mb-6 px-4 py-2 bg-[#2A2A2A] rounded-full text-[#F5AF00] text-sm font-medium">
               ⚡ Ship SaaS projects in days, not months
             </div>
 
             <h1 className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight text-[#F5AF00]">
-              Build & Launch Your SaaS<br />5× Faster
+              Build & Launch Your SaaS
+              <br />
+              5× Faster
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 text-[#CFCFCF]/80 max-w-2xl mx-auto">
-              Stop wasting weeks setting up auth, payments, and routes. 
-              SassyPack, the MERN SaaS Starter Kit gives you everything ready out of the box, 
-              so you can skip setup and start building features that matter.
+              Stop wasting weeks setting up auth, payments, and routes.
+              SassyPack, the MERN SaaS Starter Kit gives you everything ready
+              out of the box, so you can skip setup and start building features
+              that matter.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://karlgusta.gumroad.com/l/cqxqpl"
+                href="https://karlgusta.gumroad.com/l/mlixgb"
                 className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 transition-transform"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -46,7 +51,8 @@ const LandingPage = () => {
                 </svg>
               </a>
               <div className="text-sm text-[#CFCFCF]/60">
-                <span className="font-semibold text-[#CFCFCF]">$29</span> · Lifetime updates
+                <span className="font-semibold text-[#CFCFCF]">$29</span> ·
+                Lifetime updates
               </div>
             </div>
 
@@ -62,23 +68,48 @@ const LandingPage = () => {
         </section>
 
         {/* Features */}
-        <section className="py-32 px-6 bg-[#1B1B1B]">
+        <section id="why" className="py-32 px-6 bg-[#1B1B1B]">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F5AF00]">
               Why SassyPack
             </h2>
             <p className="text-xl text-[#CFCFCF]/70 mb-16">
-              Save time, skip boilerplate, and focus on building features that matter.
+              Save time, skip boilerplate, and focus on building features that
+              matter.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: "⏱️", title: "Saves Time", desc: "Skip weeks of setup and boilerplate" },
-                { icon: "📚", title: "Beginner-Friendly", desc: "Clean, understandable codebase" },
-                { icon: "🎨", title: "Easy to Customize", desc: "Adapt it for any SaaS idea" },
-                { icon: "⚡", title: "Scales Easily", desc: "Grow with your product" },
-                { icon: "📝", title: "SEO Blog", desc: "Built-in blog for articles & updates" },
-                { icon: "🔄", title: "Lifetime Updates", desc: "Always up-to-date starter kit" },
+                {
+                  icon: "⏱️",
+                  title: "Saves Time",
+                  desc: "Skip weeks of setup and boilerplate",
+                },
+                {
+                  icon: "📚",
+                  title: "Beginner-Friendly",
+                  desc: "Clean, understandable codebase",
+                },
+                {
+                  icon: "🎨",
+                  title: "Easy to Customize",
+                  desc: "Adapt it for any SaaS idea",
+                },
+                {
+                  icon: "⚡",
+                  title: "Scales Easily",
+                  desc: "Grow with your product",
+                },
+                {
+                  icon: "📝",
+                  title: "SEO Blog",
+                  desc: "Built-in blog for articles & updates",
+                },
+                {
+                  icon: "🔄",
+                  title: "Lifetime Updates",
+                  desc: "Always up-to-date starter kit",
+                },
               ].map((feature, i) => (
                 <div
                   key={i}
@@ -96,7 +127,7 @@ const LandingPage = () => {
         </section>
 
         {/* What's Inside */}
-        <section className="py-32 px-6 bg-[#212121]">
+        <section id="inside" className="py-32 px-6 bg-[#212121]">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F5AF00]">
               What’s Inside
@@ -107,24 +138,129 @@ const LandingPage = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
-                { title: "Landing Page", desc: "Clean, modern, and responsive" },
-                { title: "Auth System", desc: "Signup, login, logout, sessions" },
+                {
+                  title: "Landing Page",
+                  desc: "Clean, modern, and responsive",
+                },
+                {
+                  title: "Auth System",
+                  desc: "Signup, login, logout, sessions",
+                },
                 { title: "Protected Routes", desc: "Secure user-only pages" },
                 { title: "Navbar & Footer", desc: "Styled with DaisyUI" },
                 { title: "Profile Page", desc: "Update user info & settings" },
                 { title: "Payments", desc: "Paystack + Stripe integration" },
                 { title: "PostHog Analytics", desc: "Track usage & behavior" },
                 { title: "OG Image Setup", desc: "Perfect for social sharing" },
-                { title: "SEO-Ready Blog", desc: "Publish articles, changelogs & updates" },
+                {
+                  title: "SEO-Ready Blog",
+                  desc: "Publish articles, changelogs & updates",
+                },
               ].map((item, i) => (
                 <div
                   key={i}
                   className="p-6 bg-[#1B1B1B] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all"
                 >
-                  <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">{item.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
+                    {item.title}
+                  </h3>
                   <p className="text-[#CFCFCF]/70">{item.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing */}
+        <section id="pricing" className="py-32 px-6 bg-[#1B1B1B]">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F5AF00]">
+              Pricing
+            </h2>
+            <p className="text-xl text-[#CFCFCF]/70 mb-16">
+              Choose the plan that fits your journey
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Starter */}
+              <div className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all">
+                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
+                  Starter
+                </h3>
+                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">$29</p>
+                <p className="text-[#CFCFCF]/70 mb-4">
+                  For beginners and solo developers who want to learn or build
+                  fast.
+                </p>
+                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
+                  <li>Full MERN SaaS Starter Kit</li>
+                  <li>
+                    Authentication, Payments (Paystack + Stripe), Analytics
+                  </li>
+                  <li>Early Access Template</li>
+                  <li>Free updates for 3 months</li>
+                  <li>Great entry price for learners & indie</li>
+                </ul>
+              </div>
+
+              {/* Pro */}
+              <div className="p-6 bg-[#212121] border-2 border-[#F5AF00] rounded-2xl hover:border-[#F5AF00]/70 transition-all relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#F5AF00] text-black text-xs font-bold px-3 py-1 rounded-full">
+                  Most Popular
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
+                  Pro
+                </h3>
+                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">$79</p>
+                <p className="text-[#CFCFCF]/70 mb-4">
+                  For makers and founders who want lifetime access and more
+                  polish.
+                </p>
+                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
+                  <li>Everything in Starter</li>
+                  <li>Lifetime updates</li>
+                  <li>Early Access + Pricing Page templates</li>
+                  <li>Stripe integration</li>
+                  <li>Email support</li>
+                  <li>Perfect balance of value and features</li>
+                </ul>
+              </div>
+
+              {/* Team / Extended */}
+              <div className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all">
+                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
+                  Team / Extended
+                </h3>
+                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">$149</p>
+                <p className="text-[#CFCFCF]/70 mb-4">
+                  For small agencies, freelance developers, and teams.
+                </p>
+                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
+                  <li>Everything in Pro</li>
+                  <li>Commercial license (use in client projects)</li>
+                  <li>Priority support</li>
+                  <li>Feature request priority</li>
+                  <li>
+                    Built for professionals launching multiple SaaS projects
+                  </li>
+                </ul>
+              </div>
+
+              {/* Done-For-You */}
+              <div className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all">
+                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
+                  Done-For-You
+                </h3>
+                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">Custom</p>
+                <p className="text-[#CFCFCF]/70 mb-4">
+                  For Non-dev founders who want everything set up.
+                </p>
+                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
+                  <li>Full setup</li>
+                  <li>Custom branding</li>
+                  <li>Hosting done for you</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -136,10 +272,11 @@ const LandingPage = () => {
               Start building your SaaS today, the fast way.
             </h2>
             <p className="text-xl text-[#CFCFCF]/70 mb-8 max-w-2xl mx-auto">
-              Join hundreds of developers who are shipping faster with SassyPack.
+              Join hundreds of developers who are shipping faster with
+              SassyPack.
             </p>
             <a
-              href="https://karlgusta.gumroad.com/l/cqxqpl"
+              href="https://karlgusta.gumroad.com/l/mlixgb"
               className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
