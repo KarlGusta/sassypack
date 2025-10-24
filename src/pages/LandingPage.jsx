@@ -182,85 +182,86 @@ const LandingPage = () => {
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Starter */}
-              <div className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all">
-                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
-                  Starter
-                </h3>
-                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">$29</p>
-                <p className="text-[#CFCFCF]/70 mb-4">
-                  For beginners and solo developers who want to learn or build
-                  fast.
-                </p>
-                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
-                  <li>Full MERN SaaS Starter Kit</li>
-                  <li>
-                    Authentication, Payments (Paystack + Stripe), Analytics
-                  </li>
-                  <li>Early Access Template</li>
-                  <li>Free updates for 3 months</li>
-                  <li>Great entry price for learners & indie</li>
-                </ul>
-              </div>
-
-              {/* Pro */}
-              <div className="p-6 bg-[#212121] border-2 border-[#F5AF00] rounded-2xl hover:border-[#F5AF00]/70 transition-all relative">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#F5AF00] text-black text-xs font-bold px-3 py-1 rounded-full">
-                  Most Popular
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
-                  Pro
-                </h3>
-                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">$79</p>
-                <p className="text-[#CFCFCF]/70 mb-4">
-                  For makers and founders who want lifetime access and more
-                  polish.
-                </p>
-                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
-                  <li>Everything in Starter</li>
-                  <li>Lifetime updates</li>
-                  <li>Early Access + Pricing Page templates</li>
-                  <li>Stripe integration</li>
-                  <li>Email support</li>
-                  <li>Perfect balance of value and features</li>
-                </ul>
-              </div>
-
-              {/* Team / Extended */}
-              <div className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all">
-                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
-                  Team / Extended
-                </h3>
-                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">$149</p>
-                <p className="text-[#CFCFCF]/70 mb-4">
-                  For small agencies, freelance developers, and teams.
-                </p>
-                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
-                  <li>Everything in Pro</li>
-                  <li>Commercial license (use in client projects)</li>
-                  <li>Priority support</li>
-                  <li>Feature request priority</li>
-                  <li>
-                    Built for professionals launching multiple SaaS projects
-                  </li>
-                </ul>
-              </div>
-
-              {/* Done-For-You */}
-              <div className="p-6 bg-[#212121] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all">
-                <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
-                  Done-For-You
-                </h3>
-                <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">Custom</p>
-                <p className="text-[#CFCFCF]/70 mb-4">
-                  For Non-dev founders who want everything set up.
-                </p>
-                <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
-                  <li>Full setup</li>
-                  <li>Custom branding</li>
-                  <li>Hosting done for you</li>
-                </ul>
-              </div>
+              {[
+                {
+                  title: "Starter",
+                  price: "$29",
+                  desc: "For beginners and solo developers who want to learn or build fast.",
+                  features: [
+                    "Full MERN SaaS Starter Kit",
+                    "Authentication, Payments (Paystack + Stripe), Analytics",
+                    "Early Access Template",
+                    "Free updates for 3 months",
+                    "Great entry price for learners & indie",
+                  ],
+                },
+                {
+                  title: "Pro",
+                  price: "$79",
+                  desc: "For makers and founders who want lifetime access and more polish.",
+                  features: [
+                    "Everything in Starter",
+                    "Lifetime updates",
+                    "Early Access + Pricing Page templates",
+                    "Stripe integration",
+                    "Email support",
+                    "Perfect balance of value and features",
+                  ],
+                  popular: true,
+                },
+                {
+                  title: "Team / Extended",
+                  price: "$149",
+                  desc: "For small agencies, freelance developers, and teams.",
+                  features: [
+                    "Everything in Pro",
+                    "Commercial license (use in client projects)",
+                    "Priority support",
+                    "Feature request priority",
+                    "Built for professionals launching multiple SaaS projects",
+                  ],
+                },
+                {
+                  title: "Done-For-You",
+                  price: "Custom",
+                  desc: "For Non-dev founders who want everything set up.",
+                  features: [
+                    "Full setup",
+                    "Custom branding",
+                    "Hosting done for you",
+                  ],
+                },
+              ].map((plan, i) => (
+                <a
+                  key={i}
+                  href="https://karlgusta.gumroad.com/l/mlixgb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block p-6 bg-[#212121] border rounded-2xl hover:border-[#F5AF00]/40 transition-all ${
+                    plan.popular
+                      ? "border-2 border-[#F5AF00] relative"
+                      : "border-[#3a3a3a]"
+                  }`}
+                >
+                  {plan.popular && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#F5AF00] text-black text-xs font-bold px-3 py-1 rounded-full">
+                      Most Popular
+                    </div>
+                  )}
+                  <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">
+                    {plan.title}
+                  </h3>
+                  <p className="text-3xl font-bold mb-4 text-[#CFCFCF]">
+                    {plan.price}
+                  </p>
+                  <p className="text-[#CFCFCF]/70 mb-4">{plan.desc}</p>
+                  <ul className="text-[#CFCFCF]/60 text-sm mb-4 list-disc list-inside">
+                    {plan.features.map((feature, j) => (
+                      <li key={j}>{feature}</li>
+                    ))}
+                  </ul>
+                </a>
+              ))}
             </div>
           </div>
         </section>
