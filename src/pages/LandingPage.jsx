@@ -14,16 +14,18 @@ const LandingPage = () => {
             </div>
 
             <h1 className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight text-[#F5AF00]">
-              Build & Launch<br />5× Faster
+              Build & Launch Your SaaS<br />5× Faster
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 text-[#CFCFCF]/80 max-w-2xl mx-auto">
-              The complete MERN SaaS starter kit with auth, payments, and analytics built-in.
+              Stop wasting weeks setting up auth, payments, and routes. 
+              SassyPack, the MERN SaaS Starter Kit gives you everything ready out of the box, 
+              so you can skip setup and start building features that matter.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://karlgusta.gumroad.com/l/mlixgb"
+                href="https://karlgusta.gumroad.com/l/cqxqpl"
                 className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 transition-transform"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -63,20 +65,20 @@ const LandingPage = () => {
         <section className="py-32 px-6 bg-[#1B1B1B]">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F5AF00]">
-              Everything you need
+              Why SassyPack
             </h2>
             <p className="text-xl text-[#CFCFCF]/70 mb-16">
-              Production-ready features out of the box
+              Save time, skip boilerplate, and focus on building features that matter.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: "🔑", title: "Authentication", desc: "Secure signup, login & sessions" },
-                { icon: "💳", title: "Payments", desc: "Paystack & Stripe integrated" },
-                { icon: "📊", title: "Analytics", desc: "PostHog tracking built-in" },
-                { icon: "🔒", title: "Protected Routes", desc: "Role-based access control" },
-                { icon: "👤", title: "User Profiles", desc: "Customizable user pages" },
-                { icon: "🎨", title: "DaisyUI Styled", desc: "Beautiful, responsive design" },
+                { icon: "⏱️", title: "Saves Time", desc: "Skip weeks of setup and boilerplate" },
+                { icon: "📚", title: "Beginner-Friendly", desc: "Clean, understandable codebase" },
+                { icon: "🎨", title: "Easy to Customize", desc: "Adapt it for any SaaS idea" },
+                { icon: "⚡", title: "Scales Easily", desc: "Grow with your product" },
+                { icon: "📝", title: "SEO Blog", desc: "Built-in blog for articles & updates" },
+                { icon: "🔄", title: "Lifetime Updates", desc: "Always up-to-date starter kit" },
               ].map((feature, i) => (
                 <div
                   key={i}
@@ -93,17 +95,51 @@ const LandingPage = () => {
           </div>
         </section>
 
+        {/* What's Inside */}
+        <section className="py-32 px-6 bg-[#212121]">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F5AF00]">
+              What’s Inside
+            </h2>
+            <p className="text-xl text-[#CFCFCF]/70 mb-16">
+              Everything you need for a production-ready SaaS
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+              {[
+                { title: "Landing Page", desc: "Clean, modern, and responsive" },
+                { title: "Auth System", desc: "Signup, login, logout, sessions" },
+                { title: "Protected Routes", desc: "Secure user-only pages" },
+                { title: "Navbar & Footer", desc: "Styled with DaisyUI" },
+                { title: "Profile Page", desc: "Update user info & settings" },
+                { title: "Payments", desc: "Paystack + Stripe integration" },
+                { title: "PostHog Analytics", desc: "Track usage & behavior" },
+                { title: "OG Image Setup", desc: "Perfect for social sharing" },
+                { title: "SEO-Ready Blog", desc: "Publish articles, changelogs & updates" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="p-6 bg-[#1B1B1B] border border-[#3a3a3a] rounded-2xl hover:border-[#F5AF00]/40 transition-all"
+                >
+                  <h3 className="text-xl font-semibold mb-2 text-[#F5AF00]">{item.title}</h3>
+                  <p className="text-[#CFCFCF]/70">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-32 px-6 text-center bg-[#212121]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#F5AF00]">
-              Ready to build your SaaS?
+              Start building your SaaS today, the fast way.
             </h2>
             <p className="text-xl text-[#CFCFCF]/70 mb-8 max-w-2xl mx-auto">
               Join hundreds of developers who are shipping faster with SassyPack.
             </p>
             <a
-              href="https://karlgusta.gumroad.com/l/mlixgb"
+              href="https://karlgusta.gumroad.com/l/cqxqpl"
               className="btn bg-[#F5AF00] hover:bg-[#d49b00] border-none text-black btn-lg gap-2 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
