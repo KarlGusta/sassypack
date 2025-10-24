@@ -26,12 +26,12 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        {/* Get Now Button */}
+        {/* Get Now Button (desktop only) */}
         <a
           href="https://karlgusta.gumroad.com/l/mlixgb"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-sm border-none"
+          className="hidden md:inline-flex btn btn-sm border-none"
           style={{ backgroundColor: "#F5AF00", color: "#212121" }}
         >
           Get Now
