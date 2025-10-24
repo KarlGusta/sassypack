@@ -1,7 +1,9 @@
 import React from "react";
+import MainLayout from "./layouts/MainLayout";
 
 const LandingPage = () => {
   return (
+    <MainLayout>
     <main className="min-h-screen bg-base-100 text-base-content">
       {/* Hero */}
       <section className="text-center py-24 px-6 max-w-4xl mx-auto">
@@ -179,6 +181,7 @@ const LandingPage = () => {
         © {new Date().getFullYear()} SassyPack – Built by Karl Gusta
       </footer>
     </main>
+    </MainLayout>
   );
 };
 
